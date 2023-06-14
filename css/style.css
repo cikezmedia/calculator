@@ -1,0 +1,138 @@
+:root {
+  --dark-bg: #151515;
+  --light-bg: #fff;
+  --dark-color: #fff;
+  --light-color: #151515;
+  --secondary-color: #969696;
+  --gray-bg: #343434;
+  --main-font: 3rem;
+  --danger-color: #ff5959;
+  --primary-color: #66ff7f;
+  --default-color: #f0f0f0;
+}
+* {
+  padding: 0;
+  box-sizing: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-size: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.dark {
+  font-size: var(--main-font);
+  border-radius: 20px;
+  background-color: var(--dark-bg);
+  color: var(--dark-color);
+  width: 390px;
+  height: 810px;
+  padding: 18px;
+}
+
+.light {
+  font-size: var(--main-font);
+  border-radius: 20px;
+  background-color: var(--light-bg);
+  color: var(--light-color);
+  width: 390px;
+  height: 810px;
+  padding: 18px;
+}
+
+.calculate {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.result {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color: var(--secondary-color);
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.right {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  align-content: end;
+}
+.line {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 75px;
+  font-size: 2.4rem;
+  margin: 0 auto;
+  border-radius: 9px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.bg-red {
+  background-color: var(--danger-color);
+}
+.bg-green {
+  background-color: var(--primary-color);
+}
+.bg-gray {
+  background-color: var(--gray-bg);
+}
+.bg-default {
+  background-color: var(--default-color);
+}
+.text-red {
+  color: var(--danger-color);
+}
+.text-green {
+  color: var(--primary-color);
+}
+.text-default {
+  color: var(--light-color);
+}
+.text-white {
+  color: var(--light-bg);
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+}
